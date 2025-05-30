@@ -120,26 +120,53 @@
   </section>
 
 
-  <!-- Contato -->
-  <section id="contato" class="container py-5" data-aos="fade-up">
-    <h2 class="text-center text-light mb-4">Contato</h2>
-    <form action="contact.php" method="POST" class="text-light">
-      <div class="mb-3">
-        <label for="nome" class="form-label">Nome</label>
-        <input type="text" name="nome" class="form-control" required>
+  <section id="contato" class="py-5 bg-dark text-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4 text-warning">Contato</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form action="https://formsubmit.co/r.lemesdemorais@gmail.com" method="POST"
+            class="p-4 rounded bg-black border border-warning">
+
+            <!-- Proteção antispam -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://portfolio-rafaela.vercel.app/obrigada.html">
+            <input type="text" name="_honey" style="display:none">
+
+            <div class="mb-3">
+              <label for="nome" class="form-label text-light">Nome</label>
+              <input type="text" class="form-control bg-dark text-light border-secondary" id="nome" name="nome"
+                required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label text-light">E-mail</label>
+              <input type="email" class="form-control bg-dark text-light border-secondary" id="email" name="email"
+                required>
+            </div>
+
+            <div class="mb-3">
+              <label for="mensagem" class="form-label text-light">Mensagem</label>
+              <textarea class="form-control bg-dark text-light border-secondary" id="mensagem" name="mensagem" rows="5"
+                required></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-warning px-5">Enviar</button>
+            </div>
+
+          </form>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" name="email" class="form-control" required>
-      </div>
-      <div class="mb-3">
-        <label for="mensagem" class="form-label">Mensagem</label>
-        <textarea name="mensagem" rows="5" class="form-control" required></textarea>
-      </div>
-      <!-- Honeypot -->
-      <input type="text" name="website" style="display:none;">
-      <button type="submit" class="btn btn-warning">Enviar</button>
-    </form>
+    </div>
+  </section>
+
+
+  <!-- Honeypot -->
+  <input type="text" name="website" style="display:none;">
+  <button type="submit" class="btn btn-warning">Enviar</button>
+  </form>
   </section>
 
   <!-- Rodapé -->
