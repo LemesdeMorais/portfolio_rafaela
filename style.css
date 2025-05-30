@@ -1,0 +1,56 @@
+body {
+    background-color: #000;
+    color: #FFD700;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.btn-warning {
+    background-color: #FFD700;
+    border: none;
+    color: #000;
+}
+
+.btn-warning:hover {
+    background-color: #e6c200;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card .btn {
+    width: 48%;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 28px;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebd5a;
+    transform: scale(1.1);
+}
