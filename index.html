@@ -1,204 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Font Awesome (ícones sociais) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <title>Rafaela Lemes | Portfólio</title>
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- AOS (animações) -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Rafaela Lemes</title>
+    <style>
+        /* Resetando margens e garantindo que o body ocupe toda a altura da tela */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+        /* Definindo o fundo da página para ocupar 100% da tela */
+        #vanta-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Para garantir que o conteúdo da página fique em cima */
+        }
+
+        /* Estilo adicional para o conteúdo */
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding-top: 20%;
+        }
+
+        .content h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
+<!-- O elemento onde o efeito vai ser aplicado -->
+    <div id="vanta-bg"></div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger px-4">
-    <a class="navbar-brand fw-bold text-light" href="#">Rafaela Lemes</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-light" href="#sobre">Sobre mim</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="#projetos">Projetos</a></li>
-        <li class="nav-item"><a class="nav-link text-light" href="#contato">Contato</a></li>
-      </ul>
+    <!-- Boas Vindas -->
+    <div id="saudacao" class="content">
+        <h1>Bem vindo ao meu Portfólio!</h1>
+        <p>Rafaela Lemes - Em Produção</p>
+        <a href="sobre.html" id="sobre" target="_blank">Conheça mais</a>
     </div>
-  </nav>
 
-  <!-- Sobre -->
-  <section id="sobre" class="container py-5" data-aos="fade-up">
-    <div class="row align-items-center">
-      <div class="col-md-4">
-        <img src="img/rafaela4.png" class="img-fluid rounded-circle" alt="Rafaela Lemes">
-      </div>
-      <div class="col-md-8 text-light">
-        <h2>Sobre mim</h2>
-        <p>Sou apaixonada por tecnologia e pelo aprendizado contínuo, sempre em busca de novos
-          conhecimentos e atualizações no setor. Tenho me dedicado ao desenvolvimento de habilidades
-          em linguagens como Python, HTML, JavaScript, CSS, Java, PHP e C++. Valorizo o trabalho em equipe,
-          acreditando que a colaboração é essencial para soluções criativas e eficazes. Autodidata,
-          com rápida adaptação a novos ambientes, possuo excelente comunicação verbal e escrita,
-          além de forte capacidade de negociação com clientes e fornecedores. Tenho experiência em
-          análise de satisfação, implementação de planos de melhoria, controle de custos e otimização
-          de despesas. Minha trajetória profissional começou como jovem aprendiz na recepção da
-          Secretaria de Saúde, onde desenvolvi habilidades de escuta ativa, acolhimento e resolução
-          de conflitos, lidando com situações sensíveis de forma empática e eficiente.
-          Estou sempre em busca de desafios que me permitam evoluir profissionalmente e
-          contribuir com projetos de impacto.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Incluindo as bibliotecas necessárias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta/dist/vanta.net.min.js"></script>
 
-  <!-- Projetos -->
-  <section id="projetos" class="container py-5 text-light" data-aos="fade-up">
-    <h2 class="text-center mb-4">Meus Projetos</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 bg-dark text-light border-warning shadow">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Biblioteca</h5>
-            <p class="card-text flex-grow-1">
-              Sistema de gerenciamento de biblioteca em PHP + Bootstrap. Permite cadastro, consulta de livros e pedidos
-              para professores e bibliotecários.
-              Integrado com banco de dados MySQL.
-            </p>
-            <div class="mt-3">
-              <a href="https://github.com/LemesdeMorais/FATEC_DES_WEB2_2025_Avaliacao1" target="_blank"
-                class="btn btn-warning">Ver Projeto</a>
-              <a href="videos/biblioteca.mp4" target="_blank" class="btn btn-outline-light ms-2">Vídeo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 bg-dark text-light border-warning shadow">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Lojinha Artesanal</h5>
-            <p class="card-text flex-grow-1">
-              Sistema web simples para gerenciamento de produtos artesanais.
-              Ideal para fins didáticos, com funcionalidades como login, cadastro, listagem e
-              remoção de produtos. Apesar de ter fins didáticos, esse sistema é funcional e pode ser utilizado.
-              Integrado com banco de dados MySQL.
-            </p>
-            <div class="mt-3">
-              <a href="https://github.com/LemesdeMorais/FATEC_DES_WEB2_2025-_Avaliacao2" target="_blank"
-                class="btn btn-warning">Ver Projeto</a>
-              <a href="videos/lojinha.mp4" target="_blank" class="btn btn-outline-light ms-2">Vídeo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 bg-dark text-light border-warning shadow">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">MVS INFO</h5>
-            <p class="card-text flex-grow-1">
-              Esta é a landing page institucional da MVSinfo, empresa com mais de 10 anos de experiência
-              no setor de informática, iluminação LED e, mais recentemente, cabos elétricos, tubos e pré-moldados.
-              Essa página foi criada sem back-end, com formulário direto para o e-mail do cliente através do Formspree.
-            </p>
-            <div class="mt-3">
-              <a href="http://mvsinfo.com.br/mvsinfo/" target="_blank" class="btn btn-warning">Ver Projeto</a>
-              <a href="videos/mvs.mp4" target=" _blank" class="btn btn-outline-light ms-2">Vídeo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="contato" class="py-5 bg-dark text-light" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center mb-4 text-warning">Contato</h2>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <form action="https://formsubmit.co/r.lemesdemorais@gmail.com" method="POST"
-            class="p-4 rounded bg-black border border-warning">
-
-            <!-- Proteção antispam -->
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://portfolio-rafaela.vercel.app/obrigada.html">
-            <input type="text" name="_honey" style="display:none">
-
-            <div class="mb-3">
-              <label for="nome" class="form-label text-light">Nome</label>
-              <input type="text" class="form-control bg-dark text-light border-secondary" id="nome" name="nome"
-                required>
-            </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label text-light">E-mail</label>
-              <input type="email" class="form-control bg-dark text-light border-secondary" id="email" name="email"
-                required>
-            </div>
-
-            <div class="mb-3">
-              <label for="mensagem" class="form-label text-light">Mensagem</label>
-              <textarea class="form-control bg-dark text-light border-secondary" id="mensagem" name="mensagem" rows="5"
-                required></textarea>
-            </div>
-
-            <div class="text-center">
-              <button type="submit" class="btn btn-warning px-5">Enviar</button>
-            </div>
-
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <footer class="bg-dark text-light pt-4">
-    <div class="container text-center">
-      <h5 class="mb-3">Entre em contato</h5>
-
-      <div class="d-flex justify-content-center gap-4 mb-3">
-        <a href="https://www.linkedin.com/in/rafaela-lemes-a310861b6/" target="_blank" class="text-warning fs-4"
-          title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/raafalemes/" target="_blank" class="text-warning fs-4" title="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/LemesdeMorais" target="_blank" class="text-warning fs-4" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://wa.me/5519999644110" target="_blank" class="text-warning fs-4" title="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </div>
-
-      <p class="mb-1">© 2025 Rafaela Lemes. Todos os direitos reservados.</p>
-      <p class="small">Desenvolvido com ❤️ e café</p>
-    </div>
-  </footer>
-
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
-  <!-- Botão flutuante WhatsApp -->
-  <a href="https://wa.me/5519999644110" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
+    <!-- Inicializando o efeito -->
+    <script>
+        VANTA.NET({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x3fa4ff,
+        backgroundColor: 0xc0518,
+        points: 14.00,
+        maxDistance: 25.00,
+        spacing: 14.00
+        })
+    </script>
 </body>
-
 </html>

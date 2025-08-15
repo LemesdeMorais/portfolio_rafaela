@@ -1,56 +1,33 @@
-body {
-    background-color: #000;
-    color: #FFD700;
-    font-family: 'Segoe UI', sans-serif;
+
+
+
+/*========================= index =========*/
+
+#saudacao p{
+    font-size: 2rem;
+    font-family:"Gill Sans", sans-serif;
 }
 
-.btn-warning {
-    background-color: #FFD700;
-    border: none;
-    color: #000;
+#sobre{
+    font-size: 01rem;
+    font-family:"Gill Sans", sans-serif;
+    color: aliceblue;
+    text-decoration: none;
+
 }
 
-.btn-warning:hover {
-    background-color: #e6c200;
+
+#sobre:hover {
+    font-family:"Gill Sans", sans-serif;
+    font: bold;
+    color: rgb(0, 0, 0); /* Cor do texto ao passar o mouse */
+    padding: 5px;
+    border-radius: 3px;
+    background-color:rgba(45, 223, 230, 0.829);     /* Fundo transparente */
+    text-decoration: underline;       /* Deixa o texto sublinhado ao passar o mouse */
 }
 
-.card {
-    transition: transform 0.3s ease;
-}
 
-.card:hover {
-    transform: translateY(-5px);
-}
 
-.card {
-    transition: transform 0.3s ease;
-    border-radius: 1rem;
-}
+/*==================== sobre =================*/
 
-.card:hover {
-    transform: scale(1.03);
-}
-
-.card .btn {
-    width: 48%;
-}
-
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    font-size: 28px;
-    padding: 15px;
-    border-radius: 50%;
-    text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    transition: all 0.3s ease;
-}
-
-.whatsapp-float:hover {
-    background-color: #1ebd5a;
-    transform: scale(1.1);
-}
