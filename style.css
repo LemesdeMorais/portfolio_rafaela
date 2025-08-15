@@ -72,10 +72,10 @@ body, html {
 #sobre:hover {
     font-family:"Gill Sans", sans-serif;
     font: bold;
-    color: rgb(0, 0, 0); /* Cor do texto ao passar o mouse */
+    color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
     padding: 5px;
     border-radius: 3px;
-    background-color:rgba(45, 223, 230, 0.829);     /* Fundo transparente */
+    background-color:rgba(139, 255, 249, 0.644);     /* Fundo transparente */
     text-decoration: underline;       /* Deixa o texto sublinhado ao passar o mouse */
 }
 
