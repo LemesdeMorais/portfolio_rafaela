@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS (animações) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Rafaela Lemes</title>
+
+</head>
+<body>
+    <!-- O elemento onde o efeito vai ser aplicado -->
+    <div id="vanta-bg"></div>
+
+    <!-- Boas Vindas -->
+    <div id="saudacao" class="content">
+        <h1></h1>
+        <p></p>
+        <a href="sobre.html" id="sobre" target="_blank"></a>
+    </div>
+
+    <!-- Incluindo as bibliotecas necessárias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta/dist/vanta.net.min.js"></script>
+
+    <!-- Inicializando o efeito -->
+    <script>
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3fa4ff,
+            backgroundColor: 0xc0518,
+            points: 14.00,
+            maxDistance: 25.00,
+            spacing: 14.00
+        })
+    </script>
+</body>
+</html>
